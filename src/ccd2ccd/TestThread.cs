@@ -1,12 +1,13 @@
 ﻿using System.Diagnostics;
-using ccd2ccd.Windows;
+//using ccd2ccd.Windows;
+using ccd2ccd.Linux;
 
 namespace ccd2ccd;
 
 public static class TestThread
 {
     private const int MessagesToProcess = 2500000;
-    private const int QueueSize = 1000000;
+    private const int QueueSize = 100000;
 
     public static double RunTestForCorePair(int core1, int core2)
     {
